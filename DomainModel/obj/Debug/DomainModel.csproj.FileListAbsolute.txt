@@ -1,0 +1,4 @@
+D:\Dev\SandersonSportsStore\DomainModel\bin\Debug\DomainModel.dll
+D:\Dev\SandersonSportsStore\DomainModel\bin\Debug\DomainModel.pdb
+D:\Dev\SandersonSportsStore\DomainModel\obj\Debug\DomainModel.dll
+D:\Dev\SandersonSportsStore\DomainModel\obj\Debug\DomainModel.pdb
