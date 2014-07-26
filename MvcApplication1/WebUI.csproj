@@ -134,6 +134,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NavController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,9 +217,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Nav\Menu.ascx" />
     <Content Include="Views\Products\List.aspx" />
     <None Include="Views\Shared\Site.Master" />
-    <Content Include="Views\Products\List2.aspx" />
     <Content Include="Views\Shared\ProductSummary.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -228,7 +229,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Controllers\Web.config" />
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

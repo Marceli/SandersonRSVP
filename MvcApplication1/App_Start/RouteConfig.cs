@@ -25,6 +25,18 @@ namespace WebUI
                 new { controller = "Products", action = "List"},
                 new { page =@"\d+"}
             );
+            routes.MapRoute(
+                null,
+                "{category}",
+                new { controller = "Products", action = "List",page=1},null
+            );
+            routes.MapRoute(
+                null,
+                "{category}/Page{page}",
+                new { controller = "Products", action = "List"},
+                new { page =@"\d+" }
+            );
+            routes.MapRoute(null, "{controller}/{action}");
         }
     }
 }

@@ -11,6 +11,9 @@
         <div class="title">SPORTS STORE</div> 
     </div> 
     <div id="categories" >
+        <%Html.RenderAction("Menu","Nav",new {highlightCategory = ViewData["CurrentCategory"]}); %>
+    </div>
+    <div id="TitleContent">
         <asp:ContentPlaceHolder runat="server" ID="TitleContent"></asp:ContentPlaceHolder>
     </div>
     <div id="content">

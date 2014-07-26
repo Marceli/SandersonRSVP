@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<DomainModel.Entities.Product>>" %>
+<%@ Import Namespace="System.ComponentModel" %>
 <%@ Import Namespace="DomainModel.Entities" %>
 <%@ Import Namespace="WebUI.HtmlHelpers" %>
 
@@ -14,6 +15,6 @@
      <% Html.RenderPartial("ProductSummary", product); %>
    <% } %>
     <div class="Pager">
-    <%=Html.PageLinks((int)ViewData["CurrentPage"],(int)ViewData["TotalPages"], i=>Url.Action("List",new { page = i})) %>
+    <%=Html.PageLinks((int)ViewData["CurrentPage"],(int)ViewData["TotalPages"], i=>Url.Action("List",new { page = i, category=ViewData["currentCategory"]})) %>
     </div>    
 </asp:Content>
